@@ -1,67 +1,270 @@
-.card-header {
-	font-size: 2rem;
-	background-color: #ef6c00;
-	font-family: 'Skranji', cursive;
-	
+body {
+    padding: 30px;
+    background-image: linear-gradient(to top, #f83600 0%, #f9d423 100%);    
+    background-size: 200%;
 }
 
-h1 {
-	color: #3C2B1B;
-	font-weight: bold;
-	font-size: 4rem;
+@font-face {
+    font-family: "burgerfont";
+    src: url("fonts/Chocolate Bar Demo.otf");
+    font-weight: normal;
+}
+  
+.burgerTitle {
+    font-family: "burgerfont";
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+    0px -5px 35px rgba(255,255,255,0.3);
+    font-weight: bold;
+    color: red;
+    font-size: 70px;
 }
 
-h3 {
-	font-size: 2rem;
-	color: #c4beb8;
+ol {
+    margin: 0 0 1.5em;
+    padding: 0;
+    counter-reset: item;
+  }
+  
+  ol li {
+    margin: 0;
+    padding: 0 0 0 2em;
+    text-indent: -2em;
+    list-style-type: none;
+    counter-increment: item;
+  }
+  
+  ol li:before {
+    display: inline-block;
+    width: 1em;
+    padding-right: 0.5em;
+    color: yellow;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    font-weight: bold;
+    text-align: right;
+    content: counter(item) ".";
+  }
+
+.create-update-form {
+    padding: 5px;
+    margin: 5px;
 }
 
-h2 {
-	color: #3C2B1B;
+#burgername {
+    box-shadow: 0 15px 80px 0 rgba(0, 0, 0, 0.2), 0 25px 60px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card-body {
-	background-color: #e2e1e0;
-	/*background-color: rgba(226, 225, 224, 0.1);*/
-	/*filter: alpha(opacity=10);*/
-	/*opacity: 0.5;*/
+.devourButton {
+    margin: 165px 10px 0px -20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: red!important;
+    border-color: black!important;
 }
 
-.card-text {
-	font-size: 17px;
-	font-family: 'Oswald', sans-serif;
+.submitButton, .deleteButton {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: red!important;
+    border-color: black!important;
+    color: white!important;
 }
 
-.col-4 img {
-	padding-left: 50px;
+.deleteButton {
+    position: absolute; 
+    bottom: 10px;  
+    left: 10px;
+    font-size: 10px!important;
 }
 
-.jumbotron {
-	height: 100%;
-	margin-left: 20px;
+.devourButton:hover, .submitButton:hover {
+    color: red!important;
+    background-color: yellow!important;
 }
 
-#options {
-	margin: 10px 50px 10px 50px !important;
+devourButton:active, .submitButton:active {
+    color: purple!important;
+    background-color: rgb(0, 255, 21)!important;
 }
 
-footer {
-	background-color: #3C2B1B;
-	color: #ccc9c9;
-	/*height: 70px;*/
-	font-size: 13px;
+devourButton:visited, .submitButton:visited {
+    color: red!important;
+    background-color: yellow!important;
 }
 
-.btn-outline-secondary {
-	padding: 4px;
-	background-color: white;
-	font-size: 15px;
+.wallpaperFull {
+    background: url("../img/burgerfull.png") no-repeat center;
+    background-size: 60%;
+    padding-left: 20px;
+    background-position: 65px 12px;
 }
 
-.card {
-	width: 365px;
+#imgID1 {
+    background: url("../img/burgerfull.png") no-repeat center;
+    background-size: 60%;
+    padding: 10px 0 190px 20px;
+    background-position: 65px 35px;
 }
 
-.burger-div {
-	padding-bottom: 7px;
+#imgID2 {
+    background: url("../img/burger2.png") no-repeat center;
+    background-size: 60%;
+    padding: 10px 0 190px 20px;
+    background-position: 65px 35px;
+}
+
+#imgID3 {
+    background: url("../img/burger3.png") no-repeat center;
+    background-size: 60%;
+    padding: 10px 0 190px 20px;
+    background-position: 65px 35px;
+}
+
+#imgID4 {
+    background: url("../img/burger4.png") no-repeat center;
+    background-size: 60%;
+    padding: 10px 0 190px 20px;
+    background-position: 65px 35px;
+}
+
+#imgID5 {
+    background: url("../img/burger5.png") no-repeat center;
+    background-size: 60%;
+    padding: 10px 0 190px 20px;
+    background-position: 65px 35px;
+}
+
+#imgID6 {
+    background: url("../img/burger6.png") no-repeat center;
+    background-size: 60%;
+    padding: 10px 0 190px 20px;
+    background-position: 65px 35px;
+}
+
+.notDevoured, .burgerFullDiv, .devouredDiv {
+    color: yellow;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    font-weight: bold;
+} 
+
+.notDevoured {
+    padding-bottom: 30px;
+}
+
+.form-group {
+    text-align: center;
+}
+
+.formDiv {
+    padding-top: 30px;
+}
+
+@media (min-width:1200px) {
+
+    .form-group {
+        margin: -28px 0 0 -80px;
+    }
+
+    .submitButton {
+        margin-left: 100px;
+    }
+
+    .wallpaperDevoured, .wallpaperFull {
+        background-size: 40%;
+        background-position: 135px 12px;
+    }
+
+    .wallpaperDevoured, #imgID1, #imgID2, #imgID3, #imgID4, #imgID5, #imgID6 {
+        background-position: 135px 45px;
+        background-size: 40%;
+    }
+}
+
+@media (max-width:991px) {
+    .wallpaperDevoured, .wallpaperFull {
+        background-size: 20%;
+        background-position: 350px 12px;
+    }
+
+    .wallpaperDevoured, #imgID1, #imgID2, #imgID3, #imgID4, #imgID5, #imgID6 {
+        background-position: 350px 45px;
+        background-size: 20%;
+    }
+}
+
+@media (max-width:991px) {
+    .wallpaperDevoured, .wallpaperFull {
+        background-size: 20%;
+        background-position: 350px 12px;
+    }
+
+    .wallpaperDevoured, #imgID1, #imgID2, #imgID3, #imgID4, #imgID5, #imgID6 {
+        background-position: 350px 45px;
+        background-size: 20%;
+    }
+}
+
+@media (max-width:781px) {
+    .wallpaperDevoured, .wallpaperFull {
+        background-size: 30%;
+        background-position: 250px 12px;
+    }
+
+    .wallpaperDevoured, #imgID1, #imgID2, #imgID3, #imgID4, #imgID5, #imgID6 {
+        background-position: 260px 45px;
+        background-size: 30%;
+    }
+}
+
+@media (max-width:629px) {
+    .wallpaperDevoured, .wallpaperFull {
+        background-size: 40%;
+        background-position: 150px 5px;
+    }
+
+    .wallpaperDevoured, #imgID1, #imgID2, #imgID3, #imgID4, #imgID5, #imgID6 {
+        background-position: 150px 50px;
+        background-size: 40%;
+    }
+}
+
+@media (max-width:506px) {
+    .wallpaperDevoured, .wallpaperFull {
+        background-size: 40%;
+        background-position: 130px 30px;
+    }
+
+    .wallpaperDevoured, #imgID1, #imgID2, #imgID3, #imgID4, #imgID5, #imgID6 {
+        background-position: 130px 90px;
+        background-size: 40%;
+    }
+}
+
+@media (max-width:400px) {
+    .wallpaperDevoured, .wallpaperFull {
+        background-size: 50%;
+        background-position: 80px 30px;
+    }
+
+    .wallpaperDevoured, #imgID1, #imgID2, #imgID3, #imgID4, #imgID5, #imgID6 {
+        background-position: 90px 90px;
+        background-size: 50%;
+    }
+}
+
+@media (max-width : 375px) {
+    .wallpaperDevoured, .wallpaperFull {
+        background-size: 50%;
+        background-position: 80px 30px;
+    }
+
+    .wallpaperDevoured, #imgID1, #imgID2, #imgID3, #imgID4, #imgID5, #imgID6 {
+        background-position: 90px 90px;
+        background-size: 50%;
+    }
 }

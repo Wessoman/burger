@@ -1,24 +1,29 @@
 {
   "name": "burger",
   "version": "1.0.0",
-  "description": "Eat-Da-Burger app for Burger Gourmands",
+  "description": "Eat-Da-Burger!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wessoman/burger.git"
+    "url": "git+https://github.com/rocksteadyrose/burger.git"
   },
   "keywords": [
-    "burger"
+    "burger",
+    "MySql",
+    "Node",
+    "Express",
+    "Handlebars",
+    "ORM"
   ],
-  "author": "Wessoman",
+  "author": "Antony Hernandez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Wessoman/burger/issues"
   },
-  "homepage": "https://github.com/Wessoman/burger#readme"
+  "homepage": "https://github.com/Wessoman/burger#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
