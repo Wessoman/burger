@@ -19,4 +19,12 @@
     "url": "https://github.com/Wessoman/burger/issues"
   },
   "homepage": "https://github.com/Wessoman/burger#readme"
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0",
+    "npm": "^6.1.0"
+  }
 }
