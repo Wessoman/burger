@@ -1,0 +1,22 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Eat-Da-Burger app for Burger Gourmands",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wessoman/burger.git"
+  },
+  "keywords": [
+    "burger"
+  ],
+  "author": "Wessoman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wessoman/burger/issues"
+  },
+  "homepage": "https://github.com/Wessoman/burger#readme"
+}
