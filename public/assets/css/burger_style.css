@@ -1,12 +1,18 @@
 body {
     padding: 30px;
-    background-image: linear-gradient(to top, #f83600 0%, #f9d423 100%);    
+    background-image: repeating-linear-gradient(
+        to right,
+        #f6ba52,
+        #f6ba52 10px,
+        #ffd180 10px,
+        #ffd180 20px
+      );  
     background-size: 200%;
 }
 
 @font-face {
     font-family: "burgerfont";
-    src: url("fonts/Chocolate Bar Demo.otf");
+    src: url("fonts/whata2.ttf");
     font-weight: normal;
 }
   
