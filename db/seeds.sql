@@ -1,2 +1,2 @@
-INSERT INTO burgers (burger_name) VALUES ('Bacon Cheeseburger'), ('California Burger'), ('Swiss and Mushroom Burger');
-INSERT INTO burgers (burger_name, devoured) VALUES ('Avacado Salsa Burger', true), ('Hamburger', false), ('Juicy Lucy Burger', true);
+INSERT INTO burgers (burger_name) VALUES ('Bacon Western Cheeseburger'), ('Black Bun Umami Burger'), ('Swiss and Baby Bella Burger');
+INSERT INTO burgers (burger_name, devoured) VALUES ('Avacado Queso Fresco Burger', true), ('Cheese stuffed Hamburger', false), ('Hatch Pepper Burger', true);
