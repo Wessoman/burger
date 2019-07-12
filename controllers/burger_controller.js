@@ -20,6 +20,9 @@ router.get("/", function (req, res) {
   });
 });
 
+
+// build type 2C
+
 router.post("/api/burgers", function(req, res) {
     burger.create([
       "burger_name", "devoured"
